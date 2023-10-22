@@ -37,6 +37,22 @@ html {
     --bg-color-secondary: #DDEBEE;
 }
 
-/* --------------------------------- */
-/* ----------- MAIN GRID ----------- */
-/* --------------------------------- */
+/* ---------------------------------------- */
+/* ----------- MAIN GRID LAYOUT ----------- */
+/* ---------------------------------------- */
+.main-grid-container {
+    display: grid;
+    grid-template: repeat(6, auto) / 1;
+    grid-template-areas:
+        "header",
+        "hero",
+        "welcome",
+        "gallery",
+        "location",
+        "footer";
+}
+
+.main-grid-item {
+    padding: 80px 0;
+}
+
