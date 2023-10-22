@@ -63,6 +63,9 @@ html {
 
 .hero-full {
     grid-area: hero;
+    background-image: url("/resources/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .welcome-full {
