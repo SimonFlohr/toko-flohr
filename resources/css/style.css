@@ -44,11 +44,11 @@ html {
     display: grid;
     grid-template: repeat(6, auto) / 1;
     grid-template-areas:
-        "header",
-        "hero",
-        "welcome",
-        "gallery",
-        "location",
+        "header"
+        "hero"
+        "welcome"
+        "gallery"
+        "location"
         "footer";
 }
 
@@ -56,3 +56,27 @@ html {
     padding: 80px 0;
 }
 
+/* Areas */
+.header-full {
+    grid-area: header;
+}
+
+.hero-full {
+    grid-area: hero;
+}
+
+.welcome-full {
+    grid-area: welcome;
+}
+
+.gallery-full {
+    grid-area: gallery;
+}
+
+.location-full {
+    grid-area: location;
+}
+
+.footer-full {
+    grid-area: footer;
+}
