@@ -1,0 +1,36 @@
+/* ------------------------------ */
+/* ----------- GLOBAL ----------- */
+/* ------------------------------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Color Pallete */
+:root {
+    /* primary color 1 */
+    --primary-color-blue: #43B4C8;
+
+    /* primary color 2 */
+    --primary-color-green: #84D6AE;
+
+    /* primary color 3 */
+    --primary-color-red: #CF7A66;
+
+    /* text colors */
+    --text-color-dark: #185864;
+    --text-color-light: #ffffff;
+
+    /* bg colors */
+    --bg-color-primary: #ffffff;
+    --bg-color-secondary: #DDEBEE;
+}
+
+/* --------------------------------- */
+/* ----------- MAIN GRID ----------- */
+/* --------------------------------- */
