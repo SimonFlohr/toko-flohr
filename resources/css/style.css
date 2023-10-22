@@ -15,12 +15,18 @@ html {
 :root {
     /* primary color 1 */
     --primary-color-blue: #43B4C8;
+    --primary-color-blue-dark: #449ead;
+    --primary-color-blue-light: #56c7db;
 
     /* primary color 2 */
     --primary-color-green: #84D6AE;
+    --primary-color-green-dark: #6faf90;
+    --primary-color-green-light: #97f0c5;
 
     /* primary color 3 */
     --primary-color-red: #CF7A66;
+    --primary-color-red-dark: #a86353;
+    --primary-color-red-light: #f3947f;
 
     /* text colors */
     --text-color-dark: #185864;
