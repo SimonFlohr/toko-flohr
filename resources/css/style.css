@@ -53,12 +53,17 @@ html {
 }
 
 .main-grid-item {
-    padding: 80px 0;
+    padding: 4rem 0;
 }
 
 /* Areas */
 .header-full {
     grid-area: header;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
 }
 
 .hero-full {
@@ -82,4 +87,16 @@ html {
 
 .footer-full {
     grid-area: footer;
+}
+
+/* ------------------------------ */
+/* ----------- HEADER ----------- */
+/* ------------------------------ */
+.header-bar {
+    height: 7rem;
+}
+
+.header-bar img {
+    width: 6rem;
+    height: auto;
 }
