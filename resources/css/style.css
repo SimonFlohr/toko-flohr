@@ -9,6 +9,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Color Pallete */
@@ -102,6 +103,7 @@ html {
     height: 3rem;
     position: sticky;
     top: 0;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
