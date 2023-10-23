@@ -40,10 +40,62 @@ html {
     --bg-color-secondary: #DDEBEE;
 }
 
+/* Typography */
 h1 {
     font-style: italic;
     font-weight: 400;
     font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #999;
+    color: var(--text-color-light);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    width: 13rem;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 140%;
+    height: 180%;
+    background: rgba(255, 255, 255, 0.2); /* Shiny color */
+    transform: rotate(30deg);
+    pointer-events: none; /* So that the overlay doesn't interfere with the button's functionality */
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+    opacity: 0.4;
+  }
+
+  .btn:hover::before {
+    opacity: 1;
+    transform: rotate(30deg) translate(0%, 50%);
+  }
+
+.btn-hero {
+    background-color: var(--primary-color-red);
+    transition: all 100ms ease-in;
+}
+
+.btn-hero:hover {
+    background-color: var(--primary-color-red-light);
+    transition: all 150ms ease-out;
+}
+
+.btn-hero:active {
+    background-color: var(--primary-color-red-dark);
+    transition:none;
 }
 
 /* ---------------------------------------- */
@@ -156,7 +208,7 @@ h1 {
 .navbar li:hover,
 #nav-active:hover {
     background-color: var(--primary-color-blue-extra-light);
-    transition: all 200ms ease-out;
+    transition: all 150ms ease-out;
 }
 
 /* ---------------------------- */
@@ -175,6 +227,8 @@ h1 {
 
 .hero-box img {
     max-width: 15rem;
+    pointer-events: none;
+    user-select: none;
 }
 
 .hero-box-item-2 {
