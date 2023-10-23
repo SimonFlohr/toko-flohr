@@ -116,46 +116,36 @@ html {
 .navbar ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--text-color-light);
     font-weight: 500;
-    width: 10rem;
-    height: 3rem;
+    width: 7rem;
+    height: 2.5rem;
+    margin: 0 0.2rem;
 }
 
 .navbar li {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 200ms ease-in;
+    transition: all 150ms ease-in;
 }
 
 #nav-active {
     background-color: var(--primary-color-blue-light);
 }
 
-.menu-style {
-    background-color: var(--primary-color-green);
-    padding: 0.4rem;
-    border-radius: 10px;
-    transition: all 200ms ease-in;
-}
-
 /* Navbar items transition */
 .navbar li:hover,
 #nav-active:hover {
     background-color: var(--primary-color-blue-extra-light);
-    transition: all 200ms ease-out;
-}
-
-.navbar li:hover .menu-style {
-    background-color: #fff;
-    color: var(--text-color-dark);
-    padding: 0.5rem;
     transition: all 200ms ease-out;
 }
