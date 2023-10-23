@@ -64,6 +64,8 @@ html {
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: calc(100vh - 10rem);
 }
 
 .welcome-full {
