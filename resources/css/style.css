@@ -81,6 +81,7 @@ h1 {
     background: rgba(255, 255, 255, 0.2); /* Shiny color */
     transform: rotate(30deg);
     pointer-events: none; /* So that the overlay doesn't interfere with the button's functionality */
+    user-select: none;
     transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
     opacity: 0.4;
   }
