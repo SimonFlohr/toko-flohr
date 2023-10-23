@@ -65,6 +65,10 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     height: calc(100vh - 10rem);
 }
 
@@ -146,4 +150,29 @@ html {
 #nav-active:hover {
     background-color: var(--primary-color-blue-extra-light);
     transition: all 200ms ease-out;
+}
+
+/* ---------------------------- */
+/* ----------- HERO ----------- */
+/* ---------------------------- */
+.hero-box {
+    max-width: 50rem;
+    max-height: 30rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.hero-box img {
+    max-width: 15rem;
+}
+
+.hero-box-item-2 {
+    max-width: 30rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
