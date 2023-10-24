@@ -13,7 +13,7 @@ html {
     line-height: 1.5rem;
 }
 
-/* Color Pallete */
+/* Root */
 :root {
     /* primary color 1 */
     --primary-color-blue: #43B4C8;
@@ -38,6 +38,10 @@ html {
     /* bg colors */
     --bg-color-primary: #ffffff;
     --bg-color-secondary: #DDEBEE;
+
+    /*--------------------*/
+
+    --scroll-offset: 3rem;
 }
 
 /* Typography */
@@ -112,6 +116,7 @@ h1 {
 
 .main-grid-item {
     padding: 4rem 0;
+    scroll-margin-top: var(--scroll-offset);
 }
 
 /* Areas */
