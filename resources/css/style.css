@@ -431,6 +431,12 @@ h1, h2 {
     gap: 1rem;
 }
 
+.location-box-item-2 {
+    box-shadow: -5px 5px 15px 0 #00000010;
+    overflow: hidden;
+    height: calc(100% - 10px);
+}
+
 .contact-line {
     display: flex;
     flex-flow: row nowrap;
