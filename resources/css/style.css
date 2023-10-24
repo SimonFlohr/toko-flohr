@@ -81,7 +81,6 @@ h1 {
     background: rgba(255, 255, 255, 0.2); /* Shiny color */
     transform: rotate(30deg);
     pointer-events: none; /* So that the overlay doesn't interfere with the button's functionality */
-    user-select: none;
     transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
     opacity: 0.4;
   }
@@ -91,20 +90,11 @@ h1 {
     transform: rotate(30deg) translate(0%, 50%);
   }
 
-.btn-hero {
-    background-color: var(--primary-color-red);
-    transition: all 100ms ease-in;
-}
-
-.btn-hero:hover {
-    background-color: var(--primary-color-red-light);
-    transition: all 150ms ease-out;
-}
-
-.btn-hero:active {
-    background-color: var(--primary-color-red-dark);
-    transition:none;
-}
+  /* Layout */
+  .box {
+    max-width: 1600px;
+    margin: 0 4.5rem;
+  }
 
 /* ---------------------------------------- */
 /* ----------- MAIN GRID LAYOUT ----------- */
@@ -250,4 +240,19 @@ h1 {
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 1.5rem;
+}
+
+.btn-hero {
+    background-color: var(--primary-color-red);
+    transition: all 100ms ease-in;
+}
+
+.btn-hero:hover {
+    background-color: var(--primary-color-red-light);
+    transition: all 150ms ease-out;
+}
+
+.btn-hero:active {
+    background-color: var(--primary-color-red-dark);
+    transition:none;
 }
