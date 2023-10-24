@@ -117,7 +117,7 @@ h1, h2 {
 }
 
 .main-grid-item {
-    padding: 4rem 0;
+    padding: 6rem 0;
     scroll-margin-top: var(--scroll-offset);
 }
 
@@ -296,6 +296,10 @@ h1, h2 {
     gap: 3rem;
 }
 
+.welcome-box figure {
+    align-self: center;
+}
+
 .welcome-full img {
     width: 34rem;
     height: 21rem;
@@ -355,14 +359,12 @@ h1, h2 {
 .gallery-grid-item {
     overflow: hidden;
     border-radius: 10px;
-    /* min-width: 276px; */
-    min-height: 276px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    /* box-shadow: -5px 5px 15px 0 #00000010; */
+    box-shadow: -5px 5px 15px 0 #00000010;
     will-change: transform;
     backface-visibility: hidden;
     transform: rotate(0.0001deg);
@@ -434,7 +436,8 @@ h1, h2 {
 .location-box-item-2 {
     box-shadow: -5px 5px 15px 0 #00000010;
     overflow: hidden;
-    height: calc(100% - 10px);
+    height: 370px;
+    width: 600px;
 }
 
 .contact-line {
@@ -486,4 +489,36 @@ h1, h2 {
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+/* ------------------------------------- */
+/* ----------- MEDIA QUERIES ----------- */
+/* ------------------------------------- */
+@media only screen and (max-width: 1193px) {
+    .welcome-box {
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .welcome-box-item-1 {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1052px) {
+    .gallery-grid {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .gallery-grid-item-3 {
+        grid-area: auto;
+    }
+
+    .location-box {
+        flex-flow: column nowrap;
+        gap: 3rem;
+    }
 }
