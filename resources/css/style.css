@@ -11,6 +11,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     line-height: 1.5rem;
+    color: var(--text-color-dark);
 }
 
 /* Root */
@@ -45,7 +46,7 @@ html {
 }
 
 /* Typography */
-h1 {
+h1, h2 {
     font-style: italic;
     font-weight: 400;
     font-size: 2.5rem;
@@ -260,4 +261,16 @@ h1 {
 .btn-hero:active {
     background-color: var(--primary-color-red-dark);
     transition:none;
+}
+
+/* ------------------------------- */
+/* ----------- WELCOME ----------- */
+/* ------------------------------- */
+
+
+/* ------------------------------- */
+/* ----------- GALLERY ----------- */
+/* ------------------------------- */
+.gallery-grid img {
+    max-width: 400px;
 }
