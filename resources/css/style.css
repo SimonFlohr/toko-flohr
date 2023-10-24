@@ -307,6 +307,9 @@ h1, h2 {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    filter: brightness(90%);
+    transition: all 150ms ease-in-out;
 }
 
 .gallery-title-h {
@@ -337,10 +340,28 @@ h1, h2 {
 .gallery-grid-item {
     overflow: hidden;
     border-radius: 10px;
-    width: 100%;
+    /* min-width: 276px; */
     min-height: 276px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid red; */
     /* box-shadow: -5px 5px 15px 0 #00000010; */
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: rotate(0.0001deg);
+}
+
+.gallery-grid-item:hover img {
+    filter: brightness(100%);
+    transform: scale(1.07) rotate(0.0001deg);
+    transition: all 300ms ease-out;
+}
+
+.gallery-grid-item-1:hover img,
+.gallery-grid-item-3:hover img {
+    transform: scale(1.05) rotate(0.0001deg);
 }
 
 .gallery-grid-item-1 {
