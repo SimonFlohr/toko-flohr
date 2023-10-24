@@ -79,21 +79,17 @@ h1, h2 {
 .btn::before {
     content: "";
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 140%;
-    height: 180%;
-    background: rgba(255, 255, 255, 0.2); /* Shiny color */
+    background: rgba(255, 255, 255, 0.2);
     transform: rotate(30deg);
-    pointer-events: none; /* So that the overlay doesn't interfere with the button's functionality */
+    pointer-events: none;
     transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
-    opacity: 0.4;
-  }
+    opacity: 0.5;
+}
 
-  .btn:hover::before {
+.btn:hover::before {
     opacity: 1;
     transform: rotate(30deg) translate(0%, 50%);
-  }
+}
 
   /* Layout */
   .box {
@@ -137,11 +133,14 @@ h1, h2 {
 
 .welcome-full {
     grid-area: welcome;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-full {
     grid-area: gallery;
+    display: flex;
+    justify-content: center;
 }
 
 .location-full {
@@ -264,6 +263,13 @@ h1, h2 {
     transition:none;
 }
 
+.btn-hero::before {
+    top: -50%;
+    left: -50%;
+    width: 140%;
+    height: 180%;
+}
+
 /* ------------------------------- */
 /* ----------- WELCOME ----------- */
 /* ------------------------------- */
@@ -294,5 +300,78 @@ h1, h2 {
 /* ----------- GALLERY ----------- */
 /* ------------------------------- */
 .gallery-grid img {
-    max-width: 400px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-title-h {
+    color: white;
+    font-weight: 300;
+    font-size: 4.5rem;
+    position: relative;
+    top: -3.2rem;
+}
+
+.gallery-full {
+    background-color: var(--bg-color-secondary);
+}
+
+.gallery-box {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+    width: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.gallery-grid-item {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 276px;
+    /* border: 1px solid red; */
+    /* box-shadow: -5px 5px 15px 0 #00000010; */
+}
+
+.gallery-grid-item-1 {
+    grid-area: 1 / 1 / span 1 / span 2;
+    max-height: 282px;
+}
+
+.gallery-grid-item-3 {
+    grid-area: 1 / 4 / span 2 / span 1;
+}
+
+.gallery-grid-item-3 img {
+    width: 200%;
+}
+
+.btn-gallery {
+    background-color: var(--primary-color-green);
+    transition: all 100ms ease-in;
+    width: 100%;
+    box-shadow: -5px 5px 15px 0 #00000010;
+}
+
+.btn-gallery:hover {
+    background-color: var(--primary-color-green-light);
+    transition: all 150ms ease-out;
+}
+
+.btn-gallery:active {
+    background-color: var(--primary-color-green-dark);
+    transition:none;
+}
+
+.btn-gallery::before {
+    top: -50%;
+    left: -10%;
+    width: 100%;
+    height: 700%;
 }
