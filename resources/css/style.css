@@ -418,7 +418,50 @@ h1, h2 {
 /* -------------------------------- */
 /* ----------- LOCATION ----------- */
 /* -------------------------------- */
+.location-box {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6rem;
+}
 
+.location-box-item-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.contact-line {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5px;
+}
+
+.btn-location {
+    background-color: var(--primary-color-red);
+    width: 100%;
+    box-shadow: -5px 5px 15px 0 #00000010;
+    transition: all 100ms ease-in;
+}
+
+.btn-location:hover {
+    background-color: var(--primary-color-red-light);
+    transition: all 150ms ease-out;
+}
+
+.btn-location:active {
+    background-color: var(--primary-color-red-dark);
+    transition:none;
+}
+
+.btn-location::before {
+    top: -50%;
+    left: -50%;
+    width: 140%;
+    height: 300%;
+}
 
 /* ------------------------------ */
 /* ----------- FOOTER ----------- */
