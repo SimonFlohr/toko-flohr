@@ -150,10 +150,16 @@ h1, h2 {
 
 .location-full {
     grid-area: location;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .footer-full {
     grid-area: footer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 /* ------------------------------ */
@@ -407,4 +413,28 @@ h1, h2 {
     left: -10%;
     width: 100%;
     height: 700%;
+}
+
+/* -------------------------------- */
+/* ----------- LOCATION ----------- */
+/* -------------------------------- */
+
+
+/* ------------------------------ */
+/* ----------- FOOTER ----------- */
+/* ------------------------------ */
+.footer-box img {
+    width: 6rem;
+    height: auto;
+}
+
+.footer-full {
+    background-color: var(--primary-color-blue);
+    color: var(--text-color-light);
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
