@@ -97,7 +97,7 @@ h1, h2 {
 
   /* Layout */
   .box {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 4.5rem;
   }
 
@@ -137,6 +137,7 @@ h1, h2 {
 
 .welcome-full {
     grid-area: welcome;
+    justify-self: center;
 }
 
 .gallery-full {
@@ -266,7 +267,28 @@ h1, h2 {
 /* ------------------------------- */
 /* ----------- WELCOME ----------- */
 /* ------------------------------- */
+.welcome-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 6rem;
+}
 
+.welcome-box-item-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.welcome-full img {
+    width: 34rem;
+    height: 21rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0 -50px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px 0 #00000015;
+}
 
 /* ------------------------------- */
 /* ----------- GALLERY ----------- */
